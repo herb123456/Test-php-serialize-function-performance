@@ -40,3 +40,12 @@ function generateDeepObject($propertyNum, $levelNum) {
     return $r;
 }
 
+function runTest($testName, Closure $test) {
+    $start = microtime(true);
+
+    $test();
+
+    $end = microtime(true);
+
+    echo $testName . " time: \t\t" . ($end - $start) . " \n";
+}

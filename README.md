@@ -32,10 +32,10 @@ define('TEST_TIME', 100);
 ```
 
 ```
-serialize time: 				0.0010788440704346
-unserialize time: 				0.0027780532836914
-json_encode time: 				0.00069093704223633
-json_decode time: 				0.0027239322662354
+serialize time: 			0.0010788440704346
+unserialize time: 			0.0027780532836914
+json_encode time: 			0.00069093704223633
+json_decode time: 			0.0027239322662354
 igbinary_serialize time: 		0.00054502487182617
 igbinary_unserialize time: 		0.00051093101501465
 ```
@@ -51,10 +51,10 @@ define('STR_LENGTH', 100);
 define('TEST_TIME', 100);
 ```
 ```
-serialize time: 				0.0014660358428955
-unserialize time: 				0.0031919479370117
-json_encode time: 				0.02100396156311
-json_decode time: 				0.019490003585815
+serialize time: 			0.0014660358428955
+unserialize time: 			0.0031919479370117
+json_encode time: 			0.02100396156311
+json_decode time: 			0.019490003585815
 igbinary_serialize time: 		0.0020298957824707
 igbinary_unserialize time: 		0.001331090927124
 ```
@@ -69,10 +69,10 @@ define('ARRAY_DEEP', 30);
 define('TEST_TIME', 10);
 ```
 ```
-serialize time: 				0.0074031352996826
-unserialize time: 				0.020796060562134
-json_encode time: 				0.0040719509124756
-json_decode time: 				0.021830081939697
+serialize time: 			0.0074031352996826
+unserialize time: 			0.020796060562134
+json_encode time: 			0.0040719509124756
+json_decode time: 			0.021830081939697
 igbinary_serialize time: 		0.0094568729400635
 igbinary_unserialize time: 		0.0080678462982178
 ```
@@ -88,10 +88,10 @@ define('STR_LENGTH', 100);
 define('TEST_TIME', 10);
 ```
 ```
-serialize time: 				0.011026859283447
-unserialize time: 				0.023138999938965
-json_encode time: 				0.069886922836304
-json_decode time: 				0.076200008392334
+serialize time: 			0.011026859283447
+unserialize time: 			0.023138999938965
+json_encode time: 			0.069886922836304
+json_decode time: 			0.076200008392334
 igbinary_serialize time: 		0.019577980041504
 igbinary_unserialize time: 		0.013104915618896
 ```
@@ -109,10 +109,10 @@ define('TEST_TIME', 10);
 ```
 
 ```
-serialize time: 				0.013853073120117
-unserialize time: 				0.033852100372314
-json_encode time: 				0.072479009628296
-json_decode time: 				0.086339950561523
+serialize time: 			0.013853073120117
+unserialize time: 			0.033852100372314
+json_encode time: 			0.072479009628296
+json_decode time: 			0.086339950561523
 igbinary_serialize time: 		0.025516033172607
 igbinary_unserialize time: 		0.014665126800537
 ```
@@ -128,10 +128,10 @@ define('TEST_TIME', 100);
 ```
 
 ```
-serialize time: 				0.0015609264373779
-unserialize time: 				0.0032401084899902
-json_encode time: 				0.022146940231323
-json_decode time: 				0.022933006286621
+serialize time: 			0.0015609264373779
+unserialize time: 			0.0032401084899902
+json_encode time: 			0.022146940231323
+json_decode time: 			0.022933006286621
 igbinary_serialize time: 		0.0033202171325684
 igbinary_unserialize time: 		0.0027999877929688
 ```
@@ -147,10 +147,10 @@ define('TEST_TIME', 100);
 ```
 
 ```
-serialize time: 				0.015815019607544
-unserialize time: 				0.036242008209229
-json_encode time: 				0.22513890266418
-json_decode time: 				0.23918008804321
+serialize time: 			0.015815019607544
+unserialize time: 			0.036242008209229
+json_encode time: 			0.22513890266418
+json_decode time: 			0.23918008804321
 igbinary_serialize time: 		0.056578159332275
 igbinary_unserialize time: 		0.032699108123779
 ```
@@ -164,7 +164,6 @@ igbinary_unserialize time: 		0.032699108123779
 Serialize function is php built-in serialize win.
 
 Unserialize is igbinary win.
-
 
 
 

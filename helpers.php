@@ -53,7 +53,7 @@ function generateObject($propertyNum) {
 
     for ($i = 0; $i < $propertyNum; $i++) {
         $propertyName = generateString(3);
-        $r->{$propertyName} = generateString(10);
+        $r->{$propertyName} = generateString(STR_LENGTH);
     }
 
     return $r;

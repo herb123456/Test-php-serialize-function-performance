@@ -1,4 +1,8 @@
 <?php
+define('MIN_NUM', 0);
+define('MAX_NUM', 1000000);
+define('STR_LENGTH', 100);
+
 function generateNum($min, $max) {
     return random_int($min, $max);
 }
@@ -12,6 +16,36 @@ function generateString($length) {
     }
 
     return $r;
+}
+
+function generateDeepArr($size, $deep, $valueType) {
+    $r = [];
+    for ($i = 0; $i < $size; $i++) {
+        $r[$i] = generateDeepChild([], $deep, $valueType);
+    }
+
+    return $r;
+}
+
+function generateDeepChild($arr, $level, $valueType) {
+    if ($level < 0) {
+        return $arr;
+    }
+    switch ($valueType) {
+        case 'int':
+            $arr[] = generateNum(MIN_NUM, MAX_NUM);
+            break;
+       case 'str':
+            $arr[] = generateString(STR_LENGTH);
+            break;
+      case 'both':
+            $arr[] = generateNum(MIN_NUM, MAX_NUM);
+            $arr[] = generateString(STR_LENGTH);
+            break;
+    }
+    $arr[] = generateDeepChild([], $level - 1, $valueType);
+
+    return $arr;
 }
 
 function generateObject($propertyNum) {

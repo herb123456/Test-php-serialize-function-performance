@@ -2,14 +2,10 @@
 require_once('./helpers.php');
 
 define('ARRAY_SIZE', 300);
-//define('MIN_NUM', 0);
-//define('MAX_NUM', 1000000);
-define('TEST_TIME', 100);
+define('ARRAY_DEEP', 30);
+define('TEST_TIME', 10);
 
-$data = [];
-for ($i = 0; $i < ARRAY_SIZE; $i++) {
-    $data[] = generateNum(MIN_NUM, MAX_NUM);
-}
+$data = generateDeepArr(ARRAY_SIZE, ARRAY_DEEP, 'str');
 
 runTest('serialize', function () use ($data) {
     for ($i = 0; $i < TEST_TIME; $i++) {
